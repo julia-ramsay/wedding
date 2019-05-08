@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------- */
+/* CSS VARIABLES  */
+/* ----------------------------------------------------------- */
+:root {
+   --accent-color: #1fc8e3;
+   --font-color: #555;
+   --white-bg-color: #f7f7f7;
+   --grey-bg-color: #f4f4f4;
+}
+
+/* ----------------------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------------------- */
+html,
+body {  
+	background-color: var(--white-bg-color);
+    color: var(--font-color);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+	font-family: 'Satisfy', cursive;
+}
+
