@@ -8,12 +8,14 @@
 	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'>
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"> 
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400|Homemade+Apple' rel='stylesheet'> 
 	<link rel='stylesheet' type='text/css' href='./resources/css/main.css'>
+	<link rel='stylesheet' type='text/css' href='./resources/css/queries.css'>
 
 	<title>Ramsay & Julia's Wedding</title>
 </head>
 <body>
+	<!-- HEADER AND NAVBAR -->
 	<header class='vh-100'>
 			<nav class='navbar navbar-expand-lg navbar-light'>
 				<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
@@ -21,9 +23,9 @@
 				</button>
 				<div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
 					<div id='nav-edits' class='navbar-nav'>
-				   		<a class='nav-item nav-link ml-2 mr-4 px-0 pb-1' href='#'>Reception Info<span class='sr-only'>(current)</span></a>
-				    	<a class='nav-item nav-link mr-4 px-0 pb-1' href='#'>Hotels</a>
-				    	<a class='nav-item nav-link px-0 pb-1' href='#'>Registry</a>
+				   		<a class='nav-item nav-link mr-4 px-0 pb-1' href='#reception-info'>Reception Info<span class='sr-only'>(current)</span></a>
+				    	<a class='nav-item nav-link mr-4 px-0 pb-1' href='#accommodations'>Accommodations</a>
+				    	<a class='nav-item nav-link px-0 pb-1' href='#registry'>Registry</a>
 				   </div>
 			  </div>
 			</nav>
@@ -32,14 +34,60 @@
 				<h1 class='display-1 font-weight-lighter'>Ramsay & Julia</h1>
 			</div>
 	</header>
-
-	<section>
-		<h2>Test</h2>
+	<!-- RECEPTION INFO -->
+	<section id='reception-info' class='text-center py-5'>
+		<div class='container'>
+			<h2 class='display-4 font-weight-light mb-5'>Reception Information</h2>
+			<p class='lead mb-1'>August 24, 2019</p>
+			<p class='lead mb-4'>1:00 - 6:00pm</p>
+			<p class='lead mb-1'>89 Hunt Hill Road</p>
+			<p class='lead mb-1'>Rindge, NH</p>
+			<a id='btn-map' class='btn btn-outline-info rounded-pill font-weight-light px-3 mt-2' 
+				href='https://goo.gl/maps/LRdWMqmHDLBpBnTZ8' target='_blank'>
+				View on Map
+			</a>
+		</div>
 	</section>
-	
+	<!-- HOTELS -->
+	<section id='accommodations' class='text-center py-5'>
+		<div class='container'>
+			<h2 class='display-4 font-weight-light mb-5'>Accommodations</h2>
+			<p class='lead'>There are a number of accommodations in the area, including hotels, bed & breakfasts, & Airbnb's</p>
+			<p class='lead mb-1'>Some helpful sites for searching for places to stay include: </p>
+			<p class='lead'>
+				<a class='links' href='https://www.airbnb.com/' target='_blank'>Airbnb</a>, 
+				<a class='links' href='https://www.bedandbreakfast.com/' target='_blank'>BedandBreakfast.com</a>, 
+				<a class='links' href='https://www.kayak.com/hotels' target='_blank'>Kayak</a>, 
+				<a class='links' href='https://www.hotels.com/' target='_blank'>Hotels.com</a>
+			</p>
+		</div>
+	</section>
+	<!-- REGISTRY -->
+	<section id='registry' class='text-center py-5'>
+		<div class='container'>
+			<h2 class='display-4 font-weight-light mb-5'>Registry</h2>
+			<p class='lead'>
+				We've lived together for nearly 5 years, & during that time, we've managed to purchase almost everything that we need around the house. Towels? Got plenty. Dishes? Covered. Sheets? A set for every season.
+			</p>
+			<p class='lead'>
+				Instead of the traditional registry, we've opted to create a GoFundMe page to raise money for our honeymoon to New Zealand, as well as downpayment for our future home. If you'd like to contribute to our GoFundMe, you can do so 
+				<a class='links' href='https://www.gofundme.com/julia-amp-ramsay039s-honeymoonhouse?teamInvite=WNRps8NAN5fc4K9tofRbXNRGZmxFNKedbqyOkg3RqCs5BpW97mPx5m5td1UIJQdx' target='_blank'>here</a>.
+			</p>
+			<p class='lead'>
+				We thank you in advance & look forward to seeing you at the reception!
+			</p>
+			<p id='signature' class='lead'>
+				-Ramsay & Julia
+			</p>
+		</div>
+	</section>
 
+	<!-- SCRIPTS -->
 	<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
 	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+
+	<script src='resources/vendors/smooth-scroll-polyfill.js'></script>
+	<script src='resources/js/script.js'></script>
 </body>
 </html>

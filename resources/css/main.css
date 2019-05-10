@@ -2,7 +2,7 @@
 /* CSS VARIABLES  */
 /* ----------------------------------------------------------- */
 :root {
-   --accent-color: #1fc8e3;
+   --accent-color: #d3a606;
    --font-color: #555;
    --white-bg-color: #f7f7f7;
    --grey-bg-color: #f4f4f4;
@@ -20,7 +20,27 @@ body {
 }
 
 /* ----------------------------------------------------------- */
-/* BASIC SETUP */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------------------- */
+.display-4:after { 
+   display: block;
+   height: 2px;
+   width: 150px;
+   background-color: var(--accent-color);
+   content: " ";
+   margin: 20px auto 0 auto;
+}
+
+.links:link,
+.links:visited { color: var(--accent-color); }
+
+.links:hover,
+.links:active {
+	color: #917204;
+}
+
+/* ----------------------------------------------------------- */
+/* HEADER */
 /* ----------------------------------------------------------- */
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-min.jpg');
@@ -34,12 +54,50 @@ header {
 
 #nav-edits a { 
 	color: var(--grey-bg-color); 
-	/*transition: color 0.3s, text-decoration 0.3s*/
 	border-bottom: 0.5px solid transparent;
 }
 
-#nav-edits a:hover { 
+#nav-edits a:hover,
+#nav-edits a:active { 
 	color: #d2d2d2; 
-	/*text-decoration: underline;*/
 	border-bottom: 0.5px solid #d2d2d2;
+}
+
+
+/* ----------------------------------------------------------- */
+/* RECEPTION INFO */
+/* ----------------------------------------------------------- */
+.btn:focus, 
+.btn:active:focus, 
+.btn.active:focus{
+    outline:none;
+    box-shadow:none;
+}
+
+#btn-map:link,
+#btn-map:visited {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+#btn-map:hover,
+#btn-map:active {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	color: var(--grey-bg-color);
+}
+
+
+/* ----------------------------------------------------------- */
+/* ACCOMMODATIONS */
+/* ----------------------------------------------------------- */
+#accommodations { background-color: var(--grey-bg-color); }
+
+
+/* ----------------------------------------------------------- */
+/* REGISTRY */
+/* ----------------------------------------------------------- */
+#signature { 
+	font-family: 'Homemade Apple', cursive; 
+	font-size: 1.4rem;
 }

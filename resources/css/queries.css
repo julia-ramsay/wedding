@@ -1,0 +1,24 @@
+/* SMALL TABLET TO BIG TABLET: from 768px to 1023px */
+@media only screen and (max-width: 1023px) { 
+	.display-4:after { width: 100px; }
+}
+
+/* EDIT NAV MENU */
+@media only screen and (max-width: 1023px) { 
+	#nav-edits a { border-bottom: none; }
+
+	#nav-edits a:hover,
+	#nav-edits a:active { border-bottom: none; }
+}
+
+/* PHONES TO SMALL TABLETS: from 481px to 767px */
+@media only screen and (max-width: 767px) { 
+	header { background-attachment: scroll; }
+
+	.lead { font-size: 1.1rem; }
+}
+
+/* SMALL PHONES: from 0 to 481px */
+@media only screen and (max-width: 767px) { 
+	.display-4:after { width: 80px; }
+}
