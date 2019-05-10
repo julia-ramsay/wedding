@@ -23,5 +23,23 @@ body {
 /* BASIC SETUP */
 /* ----------------------------------------------------------- */
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-min.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: var(--grey-bg-color);
+}
+
+.hero-text-box { top: 50%; }
+
+#nav-edits a { 
+	color: var(--grey-bg-color); 
+	/*transition: color 0.3s, text-decoration 0.3s*/
+	border-bottom: 0.5px solid transparent;
+}
+
+#nav-edits a:hover { 
+	color: #d2d2d2; 
+	/*text-decoration: underline;*/
+	border-bottom: 0.5px solid #d2d2d2;
 }
